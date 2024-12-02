@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fugaz+One&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fugaz+One&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+ :root {
+    --cor-principal: #586F7C;
+    --cor-secundaria: #042433;
+    --cor-tercearia: #F4F4F9;
+    --cor-quaternaria: #808080;
+    --fonte-titulo: "DM Serif Text", serif;
+    --fonte-texto: "Tinos", serif;
+    --fonte-botao: "Fugaz One", sans-serif;
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    
+    color: #042433;
+    
+    
+}
+body {
+    /* height: 100vh; */
+    width: 100%;
+    box-sizing: border-box;
+    background-color:var(--cor-principal);
+    color:var(--cor-secundaria);
+    
+}
+.cabeçalho {
+    background-color: var(--cor-secundaria);
+    padding: 1% 12%;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+   
+    
+}
+
+.cabeçalho__menu2 {
+    display: flex;
+    text-wrap: nowrap;
+    gap: 10%;
+    
+}
+.cabeçalho__menu__link {
+    font-family: var(--fonte-texto);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-tercearia);
+    justify-content: space-between;
+    
+}
+.cabeçalho__menu2__link {
+    font-family: var(--fonte-texto);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-tercearia);
+    
+}
+strong{
+    color: var(--cor-tercearia);
+}
+.texto{
+    color: var(--cor-tercearia);
+
+}
+
+.centro {
+    padding: 20% 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10%;
+    
+}
+.centro__texto {
+    width: 50%;
+   display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    align-items: center;
+    
+    
+}
+.centro__texto__titulo{
+    font-size: 2.2rem;
+    font-family:var(--fonte-titulo);
+    font-style: italic;
+    justify-content: baseline;
+    
+   
+}
+.centro__texto__paragrafo {
+    font-size: 1.25rem;
+    font-family: var(--fonte-texto);
+    font-weight: 550;
+    
+}
+.centro__botao {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+}
+.centro__botao__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid var(--cor-secundaria);
+    color: var(--cor-tercearia);
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    padding: 15px 20px;
+    font-family: var(--fonte-botao);
+    transition: 1s;
+    cursor: pointer;
+}
+.centro__botao__link:hover {
+    background-color: rgb(177, 189, 185);
+    transition: 1s;
+    cursor: pointer;
+}
+.centro__botao__texto {
+    font-family: var(--fonte-botao);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.centro__imagem {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+.rodape {
+    text-align: center;
+    padding: 1.25rem; 
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-quaternaria);
+    
+}
+.ajuda {
+    padding: 10% 10%;
+
+}
+.ajuda__lista__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+}
+.ajuda__lista__subtitulo {
+    font-family: var(--fonte-titulo);
+}
+.ajuda__lista__descrição {
+    font-family: var(--fonte-texto);
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+ul {
+    list-style-type: disc; /* Faz com que os itens apareçam com marcadores */
+    padding-left: 1.25rem; /* Adiciona um espaço à esquerda para as listas */
+}
+
+li {
+    margin-bottom: 0.63rem; /* Dá um espaçamento entre os itens */
+    font-family: var(--fonte-texto);
+    font-weight: 700;
+}
+ol {
+    list-style-type: decimal;
+    padding-left: 1.25rem;
+}
+
+@media (max-width: 1453px) {
+    .cabeçalho {
+        padding: 1% 10%;       
+    }
+    .cabeçalho__menu2 {
+        
+    }
+    .centro {
+        
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .centro__texto {
+        width: auto;
+    }
+
+}
